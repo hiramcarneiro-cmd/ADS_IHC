@@ -1,8 +1,10 @@
-## ADS_IHC
-#Orientações para a Atividade
+# ADS_IHC
+## Orientações para a Atividade
 Formação dos grupos (3–4 alunos)
 Organizem-se em pequenos grupos.
 Cada grupo deve escolher um site ou aplicativo para análise (escolha livre).
+
+...
 
 Vamos analisar!
 Avaliem a interface escolhida considerando os seguintes aspectos:
