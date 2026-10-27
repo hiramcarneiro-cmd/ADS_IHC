@@ -3,10 +3,10 @@
     --primary-color: #60a5fa;      /* Azul claro para destaques e links */
     --primary-hover: #93c5fd;
     --text-title: #f8fafc;         /* Cor muito clara para os títulos */
-    --text-main: #e2e8f0;          /* Cor clara (parecida com a dos títulos) para texto normal */
+    --text-main: #e2e8f0;          /* Cor clara para texto normal */
     --text-muted: #cbd5e1;         /* Cor para subtítulos */
-    --card-bg: rgba(15, 23, 42, 0.88); /* Caixa escura semi-transparente para leitura */
-    --border-color: #334155;       /* Borda discreta para o tema escuro */
+    --card-bg: rgba(30, 41, 59, 0.75); /* Caixa um pouco mais clara e semi-transparente */
+    --border-color: #475569;       /* Borda um pouco mais visível para o novo tom */
     --radius: 12px;
     --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
   }
@@ -23,7 +23,7 @@
     line-height: 1.6;
     padding: 40px 20px;
     
-    /* Configuração da imagem matrix.jpg no fundo com escurecimento leve para destacar o texto */
+    /* Configuração da imagem matrix.jpg[cite: 1] no fundo com escurecimento leve */
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('matrix.jpg');
     background-size: cover;
     background-position: center;
@@ -60,7 +60,7 @@
     font-size: 1.1rem;
   }
   
-  /* Seções estilo Card (Caixas Claras Escuras) */
+  /* Seções estilo Card (Caixas mais claras) */
   .card {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -102,7 +102,7 @@
     border-radius: 4px;
     font-family: monospace;
     font-size: 0.9em;
-    border: 1px solid #334155;
+    border: 1px solid #475569;
   }
   
   /* Listas ordenadas */
@@ -138,7 +138,7 @@
   }
   
   th {
-    background-color: rgba(30, 41, 59, 0.9);
+    background-color: rgba(51, 65, 85, 0.8);
     color: var(--text-title);
     font-weight: 600;
     text-transform: uppercase;
@@ -156,6 +156,31 @@
   
   tr:hover {
     background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Rodapé */
+  .page-footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    backdrop-filter: blur(8px);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-radius: var(--radius);
+  }
+  
+  .page-footer a {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+  }
+  
+  .page-footer a:hover {
+    color: var(--primary-hover);
   }
   
   /* Responsividade para telas menores */
